@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/digitalLibrary.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merienda&family=Playwrite+AU+NSW:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Digital Library</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section class="header py-2">
+      <div class="library-img header1 my-2">
+        <img src="./images/floating books.png" class="baloon-img" />
+      </div>
+      <h1 class="DigitalLibrary-header1 my-2">Digital Library</h1>
+      <div class="library-img header2 my-2">
+        <img src="./images/bookstack.png" class="book-stack" />
+      </div>
+    </section>
+
+    <!--Explaining concept-->
+    <section id="qas" class="d-flex flex-column justify-content-center text-center mt-5">
+      <div class="explaining-part margin-left-right mt-4">
+        <h2 class="mb-4">Q&As</h2>
+        <h3 class="pb-3">What is Digital Library project about?</h3>
+        <p>
+          Digital Library is a website for a public library that is owned and
+          funded by country so there's no need to pay for books. It was made to
+          ease people's access to books and to improve work experience for
+          employees.
+        </p>
+      </div>
+
+      <div class="explaining-part margin-left-right mt-4">
+        <h3 class="pb-3">How do I use it?</h3>
+        <p class="mb-4">
+          You can simply open catalog and browse it. Or you can register and be
+          able to order paper books, download electronic books and listen to
+          audio ones, unless you're library's employee. <br />
+          Here is a video in case you wanna see usage from different points of
+          view.
+        </p>
+        <iframe
+          width="400"
+          height="225"
+          src="https://www.youtube.com/embed/980fkv4C5eE?autoplay=1&loop=1&playlist=980fkv4C5eE&mute=1"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+        <p class="mt-4">
+          But if you don't want to watch it, you can take a brief look at its
+          content in the next section below.
+        </p>
+      </div>
+    </section>
+    <div class="hr">
+      <hr />
+    </div>
+
+    <!-- usage section -->
+    <section id="users"
+      class="d-flex flex-column justify-content-center text-center explaining"
+    >
+      <div class="explaining-part margin-left-right mt-4">
+        <h2 class="pb-5">Users and their abilities</h2>
+        <p class="pb-4">
+          There are 4 types of users: Unregistered, Registered, Administartor,
+          Manager. Everyone has different abilities.
+        </p>
+      </div>
+
+      <!--Unregistered user-->
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h3 class="mb-5">As an Unregistered user you will be able to...</h3>
+        <div class="d-md-grid unregistered user">
+          <div class="video">
+            <video
+              controls
+              width="400"
+              height="auto"
+              loop
+              muted
+              preload="none"
+              poster="./videos/unregistered/posters/bookDetails.png"
+            >
+              <source
+                src="./videos/unregistered/seeBookDetails.mp4"
+                type="video/mp4"
+              />
+              <p>
+                Your browser doesn't support this video. Here is a
+                <a href="./videos/unregistered/seeBookDetails.mp4"
+                  >link to the video</a
+                >
+                instead.
+              </p>
+            </video>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="abilities">See books' details</p>
+          </div>
+          <div class="video order-md-1">
+            <video
+              controls
+              width="400"
+              height="auto"
+              loop
+              muted
+              preload="none"
+              poster="./videos/unregistered/posters/search.png"
+            >
+              <source
+                src="./videos/unregistered/SearchForBooks.mp4"
+                type="video/mp4"
+              />
+              <p>
+                Your browser doesn't support this video. Here is a
+                <a href="./videos/unregistered/SearchForBooks.mp4"
+                  >link to the video</a
+                >
+                instead.
+              </p>
+            </video>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="abilities">Search for books</p>
+          </div>
+          <div class="video order-md-2">
+            <video
+              controls
+              width="400"
+              height="auto"
+              loop
+              muted
+              preload="none"
+              poster="./videos/unregistered/posters/filter.png"
+            >
+              <source
+                src="./videos/unregistered/filterBooks.mp4"
+                type="video/mp4"
+              />
+              <p>
+                Your browser doesn't support this video. Here is a
+                <a href="./videos/unregistered/filterBooks.mp4"
+                  >link to the video</a
+                >
+                instead.
+              </p>
+            </video>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center order-md-3"
+          >
+            <p class="abilities">Filter books by type, genre, publisher</p>
+          </div>
+          <div class="video order-md-5">
+            <video
+              controls
+              width="400"
+              height="auto"
+              loop
+              muted
+              preload="none"
+              poster="./videos/unregistered/posters/register.png"
+            >
+              <source
+                src="./videos/unregistered/registering.mp4"
+                type="video/mp4"
+              />
+              <p>
+                Your browser doesn't support this video. Here is a
+                <a href="./videos/unregistered/registering.mp4"
+                  >link to the video</a
+                >
+                instead.
+              </p>
+            </video>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center order-md-4"
+          >
+            <p class="abilities">Register</p>
+          </div>
+        </div>
+
+        <!--Manager part-->
+        <div
+          class="d-flex flex-column justify-content-center align-items-center margin-left-right"
+        >
+          <h3 class="my-5">As a Manager you will be able to...</h3>
+          <p class="pb-4">do everything unregistered user can and...</p>
+          <div class="d-md-grid manager user">
+            <div class="video">
+              <video
+                controls
+                width="400"
+                height="auto"
+                loop
+                muted
+                preload="none"
+                poster="./videos/manager/posters/genres.png"
+              >
+                <source src="./videos/manager/genres.mp4" type="video/mp4" />
+                <p>
+                  Your browser doesn't support this video. Here is a
+                  <a href="./videos/manager/genres.mp4">link to the video</a>
+                  instead.
+                </p>
+              </video>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="abilities">Add, edit, delete genres</p>
+            </div>
+            <div class="video order-md-2">
+              <video
+                controls
+                width="400"
+                height="auto"
+                loop
+                muted
+                preload="none"
+                poster="./videos/manager/posters/books.png"
+              >
+                <source src="./videos/manager/books.mp4" type="video/mp4" />
+                <p>
+                  Your browser doesn't support this video. Here is a
+                  <a href="./videos/manager/books.mp4">link to the video</a>
+                  instead.
+                </p>
+              </video>
+            </div>
+            <div class="d-flex flex-column align-items-center order-md-1">
+              <p class="abilities">Add, edit, delete books. <br /></p>
+              <p>
+                To create book you need: <br />1. choose book cover (file should
+                be named after the book); <br />
+                2. Add name of the book, author, publisher, publication year and
+                description; <br />3. Choose genre, book type and specify book
+                amount if you chose paper.
+              </p>
+            </div>
+          </div>
+          <div class="video d-md-flex flex-column my-3 images-manager">
+            <img
+              src="./videos/manager/posters/paperOrders.png"
+              height="80px"
+              class="order-md-2 h-md-auto manager-reports-img"
+            />
+            <img
+              src="./videos/manager/posters/paperBooks.png"
+              height="150px"
+              class="order-md-2 h-md-auto manager-reports-img"
+            />
+            <img
+              src="./videos/manager/posters/electronicOrders.png"
+              height="150px"
+              class="manager-reports-img order-md-2 h-md-auto"
+            />
+            <div
+              class="d-flex justify-content-center align-items-center manager-reports-text order-md-1 py-3"
+            >
+              <p class="abilities">
+                Create reports on paper books, paper book orders, download and
+                listen counts
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Registered user part-->
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h3 class="mb-5">As a Registered user you will be able to...</h3>
+          <p class="pb-4">do everything unregistered user can and...</p>
+          <div class="d-md-grid registered user">
+            <div class="video registered-vid">
+              <video
+                controls
+                width="400"
+                height="auto"
+                loop
+                muted
+                preload="none"
+                poster="./videos/registered/posters/ordering.png"
+              >
+                <source
+                  src="./videos/registered/ordering.mp4"
+                  type="video/mp4"
+                />
+                <p>
+                  Your browser doesn't support this video. Here is a
+                  <a href="./videos/unregistered/seeBookDetails.mp4"
+                    >link to the video</a
+                  >
+                  instead.
+                </p>
+              </video>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center registered-text"
+            >
+              <p class="abilities">See books' details</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Administrator part-->
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h3 class="my-5">As an Administrator user you will be able to...</h3>
+          <p class="pb-4">do everything unregistered user can and...</p>
+          <div class="d-md-grid unregistered user">
+            <div class="video order-md-1">
+              <video
+                controls
+                width="400"
+                height="auto"
+                loop
+                muted
+                preload="none"
+                poster="./videos/admin/posters/issue.png"
+              >
+                <source src="./videos/admin/issueBook.mp4" type="video/mp4" />
+                <p>
+                  Your browser doesn't support this video. Here is a
+                  <a href="./videos/admin/issueBook.mp4">link to the video</a>
+                  instead.
+                </p>
+              </video>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="abilities">Issue books</p>
+            </div>
+            <div class="video order-md-2">
+              <video
+                controls
+                width="400"
+                height="auto"
+                loop
+                muted
+                preload="none"
+                poster="./videos/admin/posters/accept.png"
+              >
+                <source src="./videos/admin/accept.mp4" type="video/mp4" />
+                <p>
+                  Your browser doesn't support this video. Here is a
+                  <a href="./videos/admin/accept.mp4">link to the video</a>
+                  instead.
+                </p>
+              </video>
+            </div>
+            <div class="d-flex justify-content-center align-items-center order-md-3">
+              <p class="abilities">Accept books back</p>
+            </div>
+            <div class="video mb-4 order-md-5">
+              <video
+                controls
+                width="400"
+                height="auto"
+                loop
+                muted
+                preload="none"
+                poster="./videos/admin/posters/delete.png"
+              >
+                <source src="./videos/admin/deleteAcc.mp4" type="video/mp4" />
+                <p>
+                  Your browser doesn't support this video. Here is a
+                  <a href="./videos/admin/deleteAcc.mp4">link to the video</a>
+                  instead.
+                </p>
+              </video>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center order-md-4"
+            >
+              <p class="abilities">
+                Delete users' accounts (unless they have active orders)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hr">
+      <hr />
+    </div>
+
+    <!--About part-->
+    <section class="d-flex flex-column justify-content-center text-center">
+      <div class="explaining-part margin-left-right">
+        <h2 class="my-5">More about</h2>
+        <p>
+          The project was made by me and my groupmate, who did a front end part.
+          Back end was written by me. In my personal opinion, back end code is
+          very interesting 😉 <br />
+          You can check it out in my GitHub repository.
+        </p>
+        <a href="https://github.com/BananaDigest/DigitalLibrary">
+          <button
+            type="button"
+            class="btn btn-outline btn-lg px-4 w-100 w-sm-30 h-auto mt-4 mb-5"
+          >
+            See repository
+          </button></a
+        >
+      </div>
+    </section>
+
+    <!--ending-->
+    <section id="ending">
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">© Karabyts Sofiya</p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          aria-label="Bootstrap"
+        >
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#qas" class="nav-link px-2 text-body-secondary">Q&As</a>
+          </li>
+          <li class="nav-item">
+            <a href="#users" class="nav-link px-2 text-body-secondary">Users' abilities</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/BananaDigest" class="nav-link px-2 text-body-secondary">GitHub</a>
+          </li>
+          <li class="nav-item">
+              <a href="https://bananadigest.github.io/html-resume/" class="nav-link px-2 text-body-secondary">My Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://bananadigest.github.io/html-resume/contact.html" class="nav-link px-2 text-body-secondary">Contacts</a>
+          </li>
+        </ul>
+      </footer>
+    </div></section>
+  </body>
+</html>
