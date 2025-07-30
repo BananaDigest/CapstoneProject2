@@ -1,0 +1,175 @@
+body{
+    background-color: rgb(254, 250, 224);
+}
+
+.DigitalLibrary-header1{
+    font-size: 4.265rem;
+    color: rgb(254, 250, 224);
+    font-family: "EB Garamond";
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    background-color:  rgb(129, 144, 103);
+    min-width: 300px;
+    max-width: 600vh;
+    color: rgb(10, 64, 12);
+    border: rgb(177, 171, 134) dotted 5px;
+}
+
+.baloon-img{
+    height: 150px;
+    margin-right: 240px; 
+    margin-top: 6%;
+}
+
+.library-img{
+    display: flex;
+    min-width: 300px;
+    max-width: 200vh;
+}
+
+.header1{
+    align-self: flex-end;
+}
+
+.header2{
+ align-self: flex-start;
+}
+
+.book-stack{
+    height: 120px;
+    margin-left: 240px; 
+}
+
+.explaining-part{
+    min-width: 300px;
+    max-width: 500px;
+    align-self: center;
+}
+
+.margin-left-right{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+h2{
+    color: rgb(129, 144, 103);
+}
+
+h3{
+    font-weight: 200;
+    color: rgb(129, 144, 103);
+}
+
+hr{
+    border: groove rgb(177, 171, 134) 3px;
+    width: 4%;
+    background-color: rgb(177, 171, 134);
+    border-bottom: 0;
+}
+
+.hr{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color:rgb(10, 64, 12);
+}
+
+.unregistered{
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.user{
+    max-width: 700px;
+    gap: 40px
+}
+
+.video{
+    grid-column: span 2;
+}
+
+.abilities{
+    font-weight: 600;
+    color: rgb(10, 64, 12);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.manager{
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 1fr 1.15fr ;
+}
+
+.manager-reports-text{
+    grid-row: span 2;
+}
+
+.manager-reports-img1{
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.manager-reports-img2{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.manager-reports-img3{
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.registered{
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: 1fr;
+}
+
+.registered-text{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.registered-vid{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.btn-outline{
+    color: rgb(10, 64, 12);
+        --bs-btn-hover-color: rgb(254, 250, 224);
+    --bs-btn-hover-bg: rgb(10, 64, 12);
+    border-color: rgb(10, 64, 12);
+    --bs-btn-hover-border-color: rgb(10, 64, 12);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(8, 52, 9);
+    --bs-btn-active-border-color: rgb(10, 64, 12);
+    margin-top: 1em;
+}
+
+#ending{
+    background-color: rgb(129, 144, 103);
+}
+
+@media (max-width: 730px){
+    .images-manager{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .manager-reports-img{
+        object-fit: cover;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+}

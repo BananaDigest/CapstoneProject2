@@ -14,7 +14,7 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,7 +55,7 @@
     </section>
 
     <!-- resume element -->
-    <section class="resume-section">
+    <section id="about" class="resume-section">
       <div class="resume-section1">
         <img src="./images/profile-pic.png" class="profile-picture" />
         <div>
@@ -73,7 +73,7 @@
     </section>
 
     <!-- skills part -->
-    <section>
+    <section id="skills">
       <div class="my-skills margin-left-right">
         <div class="my-skills1">
           <div class="my-skills-h2">
@@ -210,11 +210,11 @@
     </section>
 
     <!-- Pet projects section -->
-    <section class="pet-projects">
+    <section id="pet-projects" class="pet-projects">
       <div class="pet-projects-body">
         <div><h2>My pet projects</h2></div>
-        <div class="container col-xxl-8">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="container">
+          <div class="row flex-lg-row-reverse flex-xxl-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
               <img
                 src="./images/DigitalLibrary.png"
@@ -232,7 +232,7 @@
                 accessible for everybody. I've done it with my groupmate who did
                 Front End part. Back End was made entirely by me. It includes
                 such layers as DAL, BLL, API, Unit tests. The full code is
-                available in my GitHub. I also made a video so you can see how
+                available in my GitHub. I also made a website and a video so you can see how
                 it works from the user's point of view.
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -244,12 +244,12 @@
                     See GitHub repository
                   </button>
                 </a>
-                <a href="">
+                <a href="./DigitalLibrary.html">
                   <button
                     type="button"
-                    class="btn btn-outline-secondary btn-lg px-4 w-100 w-sm-30"
+                    class="btn btn-outline-secondary btn-lg px-4 w-100 w-sm-30 h-auto"
                   >
-                    See my video
+                    See my website
                   </button></a
                 >
               </div>
@@ -257,7 +257,7 @@
           </div>
         </div>
 
-        <div class="container col-xxl-8">
+        <div class="container">
           <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
             <div class="col-10 col-sm-8 col-lg-6">
               <img
@@ -296,7 +296,7 @@
     <div class="hr-skills my-3"><hr /></div>
 
     <!-- get in touch section -->
-    <section class="get-in-touch margin-left-right">
+    <section id="get-in-touch" class="get-in-touch margin-left-right">
       <div class="get-in-touch-body">
         <div class="mb-3">
           <h2>Get in touch</h2>
@@ -332,6 +332,18 @@
     <div class="container">
       <footer class="py-3 ">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#about" class="nav-link px-2 text-body-secondary">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link px-2 text-body-secondary">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pet-projects" class="nav-link px-2 text-body-secondary">Pet Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#get-in-touch" class="nav-link px-2 text-body-secondary">Get in touch</a>
+          </li>
           <li class="nav-item">
             <a href="https://github.com/BananaDigest" class="nav-link px-2 text-body-secondary">GitHub</a>
           </li>
